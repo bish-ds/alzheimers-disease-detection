@@ -4,6 +4,7 @@ from __future__ import print_function
 
 
 import argparse
+import os
 import sys
 import time
 
@@ -60,7 +61,9 @@ def load_labels(label_file):
 
 def main(img):
   file_name = img
-  model_file = "retrained_graph.pb"
+  model_file = os.environ.get("MODEL_PATH", "retrained_graph.pb")
+  if not os.path.exists(model_file) and os.path.exists("models/retrained_graph.pb"):
+    model_file = "models/retrained_graph.pb"
   label_file = "retrained_labels.txt"
   input_height = 299
   input_width = 299

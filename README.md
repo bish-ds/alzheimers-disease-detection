@@ -86,7 +86,7 @@ The trained model file is large:
 retrained_graph.pb - about 87 MB
 ```
 
-For a cleaner GitHub repository, the model should be stored with GitHub Releases, Git LFS, or the deployed Hugging Face Space instead of being committed directly. The app expects `retrained_graph.pb` in the project root when running locally.
+For a cleaner GitHub repository, the model should be stored with GitHub Releases, Git LFS, or the deployed Hugging Face Space instead of being committed directly. The app looks for `retrained_graph.pb` in the project root first, then falls back to `models/retrained_graph.pb`.
 
 Basic Git commands:
 
