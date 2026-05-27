@@ -31,4 +31,4 @@ runs/
 # The current app expects retrained_graph.pb in the project root.
 # Store the model with GitHub Releases, Git LFS, or Hugging Face Spaces instead
 # of committing it directly to GitHub.
-retrained_graph.pb
+/retrained_graph.pb
