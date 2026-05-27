@@ -80,13 +80,13 @@ python retrain.py --image_dir dataset --output_graph retrained_graph.pb --output
 
 ## Publishing To GitHub
 
-This repository includes a large model file:
+The trained model file is large:
 
 ```text
 retrained_graph.pb - about 87 MB
 ```
 
-GitHub allows files below 100 MB, but warns for files above 50 MB. For a cleaner repository, consider using Git LFS or uploading the model file to a GitHub Release and documenting where to download it.
+For a cleaner GitHub repository, the model should be stored with GitHub Releases, Git LFS, or the deployed Hugging Face Space instead of being committed directly. The app expects `retrained_graph.pb` in the project root when running locally.
 
 Basic Git commands:
 
