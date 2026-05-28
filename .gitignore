@@ -10,6 +10,7 @@ env/
 
 # Notebook/runtime artifacts
 .ipynb_checkpoints/
+Sample MRI images/
 
 # Flask/runtime files
 instance/

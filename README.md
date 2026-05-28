@@ -9,7 +9,7 @@ pinned: false
 
 # Alzheimer's Disease Detection
 
-Flask web application for classifying brain scan images into Alzheimer's disease stage categories using a retrained TensorFlow image classification graph.
+Flask web application for classifying brain scan images into Alzheimer's disease stage categories using a retrained TensorFlow image classification graph. The prediction page also returns a Grad-CAM overlay to show the image regions most associated with the predicted class.
 
 The app supports four labels:
 
@@ -38,7 +38,7 @@ The app supports four labels:
 1. `app.py` runs the Flask web app.
 2. The upload page sends an image to `/predict`.
 3. `label_image.py` loads `retrained_graph.pb` and `retrained_labels.txt`.
-4. TensorFlow classifies the uploaded image and returns the predicted label with a short description.
+4. TensorFlow classifies the uploaded image and returns the predicted label, confidence score, short description, and Grad-CAM overlay.
 5. `retrain.py` can be used to retrain the image classifier with a folder-based dataset.
 
 ## Setup

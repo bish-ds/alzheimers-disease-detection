@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+Sample MRI images/
 .venv/
 venv/
 env/
